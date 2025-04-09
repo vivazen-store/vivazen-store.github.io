@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VivaZen Store</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f3f3;
+      color: #333;
+    }
+    header {
+      background-color: #A3D9A5;
+      color: #fff;
+      text-align: center;
+      padding: 2rem;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #ffffff;
+      border-bottom: 1px solid #ccc;
+      flex-wrap: wrap;
+    }
+    nav a {
+      padding: 1rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #A3D9A5;
+    }
+    .banner {
+      text-align: center;
+      padding: 3rem;
+      background: linear-gradient(135deg, #A3D9A5, #C8A67A);
+      color: white;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .product {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .product:hover {
+      transform: translateY(-5px);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 0.8rem 0 0.4rem;
+      font-size: 1.2rem;
+    }
+    .product p {
+      font-size: 0.95rem;
+      margin-bottom: 0.5rem;
+    }
+    .product a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      padding: 0.5rem 1rem;
+      background-color: #25D366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .product a:hover {
+      background-color: #128C7E;
+    }
+    .trust {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      padding: 1rem;
+      flex-wrap: wrap;
+    }
+    .trust img {
+      height: 50px;
+    }
+    .info-section {
+      background-color: #fff;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    .info-section h2 {
+      color: #A3D9A5;
+    }
+    .info-section form input,
+    .info-section form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .info-section form button {
+      background-color: #A3D9A5;
+      color: #fff;
+      border: none;
+      padding: 0.7rem 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #ffffff;
+      border-top: 1px solid #ccc;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VivaZen Store</h1>
+    <p>Seu refúgio natural de bem-estar</p>
+  </header>
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Aromaterapia</a>
+    <a href="#">Relaxamento</a>
+    <a href="#">Cuidados com a Pele</a>
+    <a href="#">Fitness e Yoga</a>
+    <a href="#contato">Contato</a>
+    <a href="#sobre">Sobre Nós</a>
+    <a href="#politica">Política</a>
+  </nav>
+  <section class="banner">
+    <h2>Sinta o Equilíbrio Natural</h2>
+    <p>Frete grátis acima de R$149 | Produtos Naturais e Seguros</p>
+    <p><strong>Compra 100% segura com garantia de entrega!</strong></p>
+  </section>
+  <div class="trust">
+    <img src="https://cdn-icons-png.flaticon.com/512/535/535239.png" alt="Compra segura" title="Compra Segura">
+    <img src="https://cdn-icons-png.flaticon.com/512/2910/2910791.png" alt="Satisfação garantida" title="Satisfação garantida">
+    <img src="https://cdn-icons-png.flaticon.com/512/891/891419.png" alt="Proteção ao cliente" title="Proteção ao cliente">
+  </div>
+  <section class="products">
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61HoYjH2UzL._AC_SL1000_.jpg" alt="Difusor ZenMist">
+      <h3>Difusor de Aromas ZenMist™</h3>
+      <p>Relaxe com aromas naturais. Iluminação LED e design moderno.</p>
+      <a href="https://wa.me/SEUNUMERO?text=Quero%20comprar%20o%20Difusor%20ZenMist" target="_blank">Comprar via WhatsApp</a>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/51HxFj0g-5L._AC_SL1000_.jpg" alt="Óleo de Lavanda">
+      <h3>Óleo Essencial de Lavanda</h3>
+      <p>Calma, relaxamento e sono profundo com óleo 100% puro.</p>
+      <a href="https://wa.me/SEUNUMERO?text=Quero%20comprar%20o%20Óleo%20de%20Lavanda" target="_blank">Comprar via WhatsApp</a>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71NucMLdftL._AC_SL1500_.jpg" alt="Máscara Térmica">
+      <h3>Máscara Térmica RelaxaZen™</h3>
+      <p>Alívio natural para olhos e mente com ervas desidratadas.</p>
+      <a href="https://wa.me/SEUNUMERO?text=Quero%20comprar%20a%20Máscara%20Térmica" target="_blank">Comprar via WhatsApp</a>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61aqj0npE8L._AC_SL1000_.jpg" alt="Rolo Facial de Jade">
+      <h3>Rolo Facial de Jade</h3>
+      <p>Reduz inchaço e melhora a circulação facial naturalmente.</p>
+      <a href="https://wa.me/SEUNUMERO?text=Quero%20comprar%20o%20Rolo%20de%20Jade" target="_blank">Comprar via WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="sobre" class="info-section">
+    <h2>Sobre Nós</h2>
+    <p>Somos apaixonados pelo poder da natureza e criamos a VivaZen para trazer produtos naturais, eficazes e acessíveis para seu bem-estar. Trabalhamos com fornecedores confiáveis e entregamos para todo o Brasil.</p>
+  </section>
+
+  <section id="politica" class="info-section">
+    <h2>Política de Reembolso e Privacidade</h2>
+    <p>Garantimos sua satisfação! Caso não esteja feliz com seu pedido, entre em contato em até 7 dias após o recebimento. Seus dados são protegidos com criptografia SSL.</p>
+  </section>
+
+  <section id="contato" class="info-section">
+    <h2>Fale Conosco</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Digite sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VivaZen Store. Todos os direitos reservados.</p>
+    <p>Site 100% seguro com criptografia SSL | Política de reembolso garantida</p>
+    <p>Atendimento via WhatsApp: (XX) XXXXX-XXXX</p>
+  </footer>
+</body>
+</html>
